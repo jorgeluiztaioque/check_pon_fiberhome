@@ -5,6 +5,7 @@ This plugin check status of all ONUs connected in a specific PON <br>
 and return if these ONUs operational state is UP <br>
 <br>
 <br>
+How plugin the compare nagios status?<br>
 If the most part of ONUs is UP all it's OK<br>
 If all ONUs is DOWN the PON port is DOWN<br>
 and if the most part of ONUs is DOWN the PON port is WARNING<br>
