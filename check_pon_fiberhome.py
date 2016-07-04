@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #-----------------------------------------------------------------------
 # Nagios check PON in OLT Fiberhome
-# Wroted by Jorge Luiz Taioque
+# Written by Jorge Luiz Taioque
 # This plugin check status of all ONUs connected in a specific PON 
 # and return if these ONUs operational state is UP 
 #
