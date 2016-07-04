@@ -1,6 +1,6 @@
 Nagios check PON in OLT Fiberhome
 ---
-Wroted by Jorge Luiz Taioque<br>
+Written by Jorge Luiz Taioque<br>
 This plugin check status of all ONUs connected in a specific PON <br>
 and return if these ONUs operational state is UP <br>
 <br>
