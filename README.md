@@ -1,4 +1,22 @@
-Nagios check PON in OLT Fiberhome
+Nagios check PON status in OLT Fiberhome
+---
+
+SNMP VERION
+---
+Nagios check PON in OLT Fiberhome <br>
+Written by Jorge Luiz Taioque <br>
+This plugin check status of all ONUs connected in a specific PON  <br>
+and return if these ONUs operational state is UP or DOWN <br>
+----- <br>
+Usage: <br>
+./check_pon_fiberhome [IP_OLT] [PON_SLOT/PON_PORT] <br>
+Like: <br>
+./check_pon_fiberhome 10.10.10.1 1/8 <br>
+put only the slot_number and pon_number before and after slash / <br>
+In nagios service.cfg use: <br>
+check_command:	check_pon_fiberhome!10.10.10.1!1/8 <br>
+
+TL1 VERSION
 ---
 Written by Jorge Luiz Taioque<br>
 This plugin check status of all ONUs connected in a specific PON <br>
@@ -17,7 +35,9 @@ Like:<br>
 ./check_pon_fiberhome 10.10.10.1 10.10.10.2 1-1<br>
 put only the slot_number and pon_number<br>
 <br>
-<br>
+
+Configuring nagios
+---
 In nagios service.cfg use:<br>
 check_command:	check_pon_fiberhome!10.10.10.1!10.10.10.2!1-1<br>
 <br>
