@@ -1,7 +1,7 @@
 Nagios check PON status in OLT Fiberhome
 ---
 
-SNMP VERION
+SNMP VERSION
 ---
 Nagios check PON in OLT Fiberhome <br>
 Written by Jorge Luiz Taioque <br>
