@@ -17,6 +17,16 @@ put only the slot_number and pon_number before and after slash / <br>
 In nagios service.cfg use: <br>
 check_command:	check_pon_fiberhome!10.10.10.1!1/8 <br>
 
+
+Configuring nagios
+---
+In nagios command.cfg use:<br>
+define command{<br>
+        command_name    check_pon_fiberhome<br>
+        command_line    $USER1$/check_pon_fiberhome $ARG1$ $ARG2$<br>
+        }<br>
+
+
 TL1 VERSION
 ---
 Written by Jorge Luiz Taioque<br>
