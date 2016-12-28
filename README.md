@@ -19,7 +19,7 @@ check_command:	check_pon_fiberhome!10.10.10.1!1/8 <br>
 
 
 Configuring nagios
----
+----
 In nagios command.cfg use:<br>
 define command{<br>
         command_name    check_pon_fiberhome<br>
@@ -50,7 +50,7 @@ In nagios service.cfg use:<br>
 check_command:	check_pon_fiberhome!10.10.10.1!10.10.10.2!1-1<br>
 
 Configuring nagios
----
+----
 In nagios command.cfg use:<br>
 define command{<br>
         command_name    check_pon_fiberhome<br>
