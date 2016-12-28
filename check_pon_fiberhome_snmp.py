@@ -47,7 +47,6 @@ readport = commands.getoutput("snmpwalk -Os -c adsl -v 1 "+olt_ip+" "+mib_status
 
 status = readport[-1:]
 
-print status
 status = int(status)
 
 if status == 0:
