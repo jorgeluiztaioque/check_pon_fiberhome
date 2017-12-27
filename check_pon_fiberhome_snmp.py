@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env pythons
 #-----------------------------------------------------------------------
 # Nagios check PON in OLT Fiberhome
 # Written by Jorge Luiz Taioque
