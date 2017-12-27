@@ -42,7 +42,19 @@
 #				2:empty(0)"
 #			::= { oltPonInfoEntry 5 }					
 
-#PON STATUS
+#ONU LIST BY PON
+#--  1.3.6.1.4.1.5875.800.3.10.1.1.3
+#		-- 1.3.6.1.4.1.5875.800.3.10.1.1.3
+#		authOnuListPon OBJECT-TYPE
+#			SYNTAX Integer32
+#			MAX-ACCESS read-only
+#			STATUS current
+#			DESCRIPTION
+#				"Column Description"
+#			::= { authOnuListEntry 3 }
+
+
+#ONU STATUS BY PON
 #--  1.3.6.1.4.1.5875.800.3.10.1.1.11
 #		-- 1.3.6.1.4.1.5875.800.3.10.1.1.11
 #		onuStatus OBJECT-TYPE
@@ -55,16 +67,6 @@
 #				2:online(1)"
 #			::= { authOnuListEntry 11 }
 
-#ONU LIST BY PON
-#--  1.3.6.1.4.1.5875.800.3.10.1.1.3
-#		-- 1.3.6.1.4.1.5875.800.3.10.1.1.3
-#		authOnuListPon OBJECT-TYPE
-#			SYNTAX Integer32
-#			MAX-ACCESS read-only
-#			STATUS current
-#			DESCRIPTION
-#				"Column Description"
-#			::= { authOnuListEntry 3 }
 
 __author__ = 'Jorge Luiz Taioque'
 __version__= 0.1
