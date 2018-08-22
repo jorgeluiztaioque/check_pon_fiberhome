@@ -1,6 +1,6 @@
 # Nagios check PON status in OLT Fiberhome
 
-This plugin can test all Fiberhome pon slot with 8 or 16 PONs verify with PON link status is UP or DOWN
+This plugin can test all Fiberhome pon slot with 8 or 16 PONs if PON link status is UP or DOWN
 ---
 The plugin check if in all PONs of a specific SLOT has customers, if a PON port have one or more customers and PON status is DOWN one alarm is generated.
 
