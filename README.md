@@ -13,8 +13,10 @@ and return if these PON operational state is UP or DOWN <br>
 
 ### Dependences
 <pre>
+apt install python3
+apt install python3-pip
 apt install libsnmp-dev snmp-mibs-downloader
-apt install gcc python-dev
+apt install gcc python3-dev
 pip3 install easysnmp
 </pre>
 ----- <br>
