@@ -26,6 +26,9 @@ import sys
 olt_ip = sys.argv[1]
 olt_port = sys.argv[2]
 
+#Alarm only PON ports that has more than this value (variable [alarm] value)
+alarm = 2
+
 snmpSession = Session(hostname=olt_ip, community='adsl', version=2)
 
 mib_status = "1.3.6.1.4.1.5875.800.3.9.3.4.1.5"
@@ -53,16 +56,17 @@ for i in indice:
 
 port_down = []
 for i in range(1,len(result)+1):
-	if int(result[i][0]) == 0 and int(result[i][1]) > 1:
-		port_down.append(i)
-
+        if int(result[i][0]) == 0 and int(result[i][1]) > alarm:
+                port_down.append(i)
+		
 if len(port_down) >= 1:
-	print ("PON "+str(port_down)+" Down")
-	sys.exit(2)
+        print ("Slot "+olt_port+" PONs "+str(port_down)+" Down")
+        sys.exit(2)
 
 if not port_down:
-	if not indice:
-		print ("Slot not existing")
-	else:
-		print ("PON Slot is Up")
-		sys.exit(0)
+        if not indice:
+                print ("Slot not existing")
+        else:
+                print ("Slot "+olt_port+" PONs is Up")
+                sys.exit(0)
+
