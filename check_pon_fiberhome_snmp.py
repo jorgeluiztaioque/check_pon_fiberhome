@@ -17,13 +17,8 @@
 # check_command:	check_pon_fiberhome!10.10.10.1!1
 #-----------------------------------------------------------------------
 
-# Dependency
-#apt install libsnmp-dev snmp-mibs-downloader
-#apt install gcc python-dev
-#pip3 install easysnmp
-
 __author__ = 'Jorge Luiz Taioque'
-__version__= 0.1
+__version__= 1.0
 
 import os
 import subprocess

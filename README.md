@@ -8,6 +8,14 @@ Written by Jorge Luiz Taioque <br>
 This plugin check status of all ONUs connected in a specific PON  <br>
 and return if these ONUs operational state is UP or DOWN <br>
 ----- <br>
+
+# Dependences
+<pre>
+apt install libsnmp-dev snmp-mibs-downloader
+apt install gcc python-dev
+pip3 install easysnmp
+</pre>
+----- <br>
 Usage: <br>
 ./check_pon_fiberhome [IP_OLT] [SLOT] <br>
 Like: <br>
