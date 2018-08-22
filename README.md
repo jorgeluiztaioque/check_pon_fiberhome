@@ -9,13 +9,13 @@ This plugin check status of all ONUs connected in a specific PON  <br>
 and return if these ONUs operational state is UP or DOWN <br>
 ----- <br>
 Usage: <br>
-./check_pon_fiberhome [IP_OLT] [PON_SLOT/PON_PORT] <br>
+./check_pon_fiberhome [IP_OLT] [SLOT] <br>
 Like: <br>
-./check_pon_fiberhome 10.10.10.1 1/8 <br>
+./check_pon_fiberhome 10.10.10.1 1 <br>
 put only the slot_number and pon_number before and after slash / <br>
 <br>
 In nagios service.cfg use: <br>
-check_command:	check_pon_fiberhome!10.10.10.1!1/8 <br>
+check_command:	check_pon_fiberhome!10.10.10.1!1 <br>
 
 
 Configuring nagios
@@ -56,7 +56,3 @@ define command{<br>
         command_name    check_pon_fiberhome<br>
         command_line    $USER1$/check_pon_fiberhome $ARG1$ $ARG2$ $ARG3$<br>
         }<br>
-
-
-
-
