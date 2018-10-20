@@ -58,15 +58,14 @@ port_down = []
 for i in range(1,len(result)+1):
         if int(result[i][0]) == 0 and int(result[i][1]) > alarm:
                 port_down.append(i)
-		
+
 if len(port_down) >= 1:
         print ("Slot "+olt_port+" PONs "+str(port_down)+" Down")
         sys.exit(2)
 
 if not port_down:
         if not indice:
-                print ("Slot not existing")
+                print ("Slot not exist")
         else:
                 print ("Slot "+olt_port+" PONs is Up")
                 sys.exit(0)
-
