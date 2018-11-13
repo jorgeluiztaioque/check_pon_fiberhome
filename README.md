@@ -24,7 +24,7 @@ pip3 install easysnmp
 ./check_pon_fiberhome [IP_OLT] [SLOT] <br>
 Like: <br>
 ./check_pon_fiberhome 10.10.10.1 1 <br>
-put only the slot_number and pon_number before and after slash / <br>
+put only the slot_number after olt IP address <br>
 <br>
 In nagios service.cfg use: <br>
 check_command:	check_pon_fiberhome!10.10.10.1!1 <br>
